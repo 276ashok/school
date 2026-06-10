@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function Contact() {
   const [formStatus, setFormStatus] = useState<"idle" | "submitted">("idle");

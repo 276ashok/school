@@ -5,6 +5,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout";
+import { AdobeTracker } from "./components/AdobeTracker";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Courses from "./pages/Courses";
@@ -18,6 +19,7 @@ import Contact from "./pages/Contact";
 export default function App() {
   return (
     <Router>
+      <AdobeTracker />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
